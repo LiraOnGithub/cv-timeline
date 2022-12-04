@@ -48,10 +48,10 @@ The first argument of `\timeline` can contain `\historyItem`s, `\historySubItem`
 The second argument is to call `\connect{A}{B}` for all items from the first argument. A is the oldest entry, B is a newer entry.
 ```tex
 \timeline{
-  \historyItem{C}
-  \historyItem{B}
-  \historySubItem{A1}
-  \historyItem{A}
+  \historyItem{C}{}{}{}{}
+  \historyItem{B}{}{}{}{}
+  \historySubItem{A1}{}{}{}{}
+  \historyItem{A}{}{}{}{}
 }{
   \connect{B}{C}
   \connect{A}{B}
@@ -61,11 +61,11 @@ The second argument is to call `\connect{A}{B}` for all items from the first arg
 If you connect multiple `\historySubItem`s to one `\historyItem` it can cause overlap. To overcome that you can also use the name of another `\historySubItem` followed by "-sp".
 ```tex
 \timeline{
-  \historyItem{C}
-  \historyItem{B}
-  \historySubItem{A2}
-  \historySubItem{A1}
-  \historyItem{A}
+  \historyItem{C}{}{}{}{}
+  \historyItem{B}{}{}{}{}
+  \historySubItem{A2}{}{}{}{}
+  \historySubItem{A1}{}{}{}{}
+  \historyItem{A}{}{}{}{}
 }{
   \connect{B}{C}
   \connect{A}{B}
