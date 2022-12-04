@@ -9,14 +9,17 @@ Class I created for my own CV
 The information at the bottom of the profile is only included to give credit. You will not have that in your own CV ;)
 
 # How to use
-Start with the documentclass, profile and timeline:
+You need some version of LaTeX to build your CV. I use XeLaTeX.
+
+Create a file "mycv.tex" with the documentclass, profile and timeline:
 ```tex
 \documentclass[a4paper]{cv-timeline}
 \begin{document}
 
   \begin{profile}{YOUR PICTURE}
-  
+   
   \end{profile}
+  
   
   \timeline{}{}
 
@@ -70,3 +73,5 @@ If you connect multiple `\historySubItem`s to one `\historyItem` it can cause ov
   \connect{A}{A1}
 }
 ```
+### Compiling
+You can compile your CV with `xelatex mycv.tex`.
