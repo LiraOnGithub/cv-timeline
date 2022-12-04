@@ -54,8 +54,6 @@
 
 \setlist{nolistsep, leftmargin=0cm, topsep=0cm, partopsep=0cm}
 
-\definecolor{darkblue}{HTML}{71b8e6}
-
 %https://tex.stackexchange.com/questions/68272/make-section-headings-invisible/68296#68296
 \newcommand\invisiblesection[1]{
   \refstepcounter{section}
@@ -67,7 +65,7 @@
 	\begin{tikzpicture}[overlay, remember picture]
 		\node
 			[ rectangle
-			, fill=darkblue
+			, fill=cv-color
 			, anchor=north west
 			, minimum width=\sidebarWidth
 			, minimum height=\paperheight
@@ -91,7 +89,7 @@
 \newcommand\detailItem[2]{#1&#2\\}
 
 \newcommand\historyItemGraphics[4]{
-	\node[darkblue, label=center:#2] (#1) {};
+	\node[cv-color, label=center:#2] (#1) {};
 	\node[
 		clabel,
 		#4,
@@ -120,7 +118,7 @@
 	\node[historycircle] (forSeperator) {};
 	\node[
 		ellipse,
-		fill=darkblue,
+		fill=cv-color,
 		minimum height=.1em,
 		minimum width=\contentWidth/2,
 		right=\contentWidth/4 of forSeperator
@@ -133,13 +131,13 @@
 	\invisiblesection{Timeline}
 
 	\tikzstyle{historycircle} = [circle, draw=none, inner sep=0cm, minimum size=\historyCircleSize]
-	\tikzstyle{darkblue}=[historycircle, fill=darkblue, line width=0cm]
+	\tikzstyle{cv-color}=[historycircle, fill=cv-color, line width=0cm]
 	\tikzstyle{clabel} = [outer sep=0cm, align=left]
 
 	\tikzstyle{level1} = [text width=\contentWidth]
 	\tikzstyle{level2} = [text width=\dimexpr\contentWidth-\historyCircleSize\relax]
 
-	\tikzstyle{every path} = [draw=darkblue, line width=2pt]
+	\tikzstyle{every path} = [draw=cv-color, line width=2pt]
 
 	\begin{tikzpicture}
 		\matrix[
