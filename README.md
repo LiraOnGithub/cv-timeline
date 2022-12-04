@@ -11,6 +11,8 @@ The information at the bottom of the profile is only included to give credit. Yo
 # How to use
 You need some version of LaTeX to build your CV. I use XeLaTeX.
 
+If you want to see an example of a full CV that uses cv-timeline, take a look at https://github.com/LiraOnGithub/cv-timeline/blob/master/cv-timeline-example.tex
+
 Create a file "mycv.tex" with the documentclass, profile and timeline:
 ```tex
 \documentclass[a4paper]{cv-timeline}
