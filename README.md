@@ -47,7 +47,7 @@ The first argument of `\timeline` can contain `\historyItem`s, `\historySubItem`
 ### Second argument
 The second argument is to call `\connect{A}{B}` for all items from the first argument. A is the oldest entry, B is a newer entry.
 ```tex
-\profile{
+\timeline{
   \historyItem{C}
   \historyItem{B}
   \historySubItem{A1}
@@ -60,7 +60,7 @@ The second argument is to call `\connect{A}{B}` for all items from the first arg
 ```
 If you connect multiple `\historySubItem`s to one `\historyItem` it can cause overlap. To overcome that you can also use the name of another `\historySubItem` followed by "-sp".
 ```tex
-\profile{
+\timeline{
   \historyItem{C}
   \historyItem{B}
   \historySubItem{A2}
