@@ -11,7 +11,6 @@
 
 \RequirePackage [absolute,overlay]{textpos}
 \RequirePackage{hyperref}
-\RequirePackage{fontawesome5}
 \RequirePackage{enumitem}
 \RequirePackage{tabularx}
 
