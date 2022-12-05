@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{cv}
+\ProvidesClass{cv-timeline}
 \LoadClass{article}
 
 \RequirePackage{fontspec}
